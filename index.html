@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>개인 웹페이지 갈아엎기 계획안3</title>
+
+	<style type="text/css">
+		
+		div{width:250px; height: 375px; background: black; transition: 
+			all 0.4s; float: left; margin: 20px;}
+		
+		header{margin: 20px;}
+
+		h1{font-size: 30px; font-weight: 200;}
+		
+		body{padding: 20px;}
+
+	</style>
+
+
+</head>
+
+	<header> 
+		<h1>각 사각형들은 두 번 누르면 원래 형태로 돌아갑니다..!</h1>
+	</header>
+
+<body id="mybody">
+	
+	<audio id="opensound">
+		<source src="op.mp3" type="audio/mp3">
+	</audio>
+	
+	<audio id="closesound">
+		<source src="cl.mp3" type="audio/mp3">
+	</audio>
+
+			
+		<div id="A"></div>			
+		<div id="B">안녕하세요!</div>		
+		<div id="C"></div>
+		<div id="D"></div>
+		<div id="E"></div>
+		<div id="F"></div>
+
+			<script type="text/javascript">
+			
+				var Alarge = 1
+				A.onclick = function () {
+				  Alarge = Alarge+1
+		         if(Alarge%2==0){
+		            A.style.width = "550px";
+		            A.style.height = "800px";
+		            opensound.play();
+		            mybody.style.backgroundColor = "yellow";
+		         }else{
+		            A.style.width = "250px";
+		            A.style.height = "375px";
+		            closesound.play();
+		            mybody.style.backgroundColor = "white";
+		         }
+		      }
+
+				var Blarge = 1
+				B.onclick = function () { 
+
+				  Blarge = Blarge+1
+		         if(Blarge%2==0){
+		            B.style.width = "550px";
+		            B.style.height = "800px";
+		            B.style.backgroundColor = "yellow";
+		            opensound.play();
+		            mybody.style.backgroundColor = "gray";
+		         }else{
+		            B.style.width = "250px";
+		            B.style.height = "375px";
+		            B.style.backgroundColor = "black";
+		            closesound.play();
+		            mybody.style.backgroundColor = "white";
+		         }
+		      }
+
+				var Clarge = 1
+				C.onclick = function () {
+				  Clarge = Clarge+1
+		         if(Clarge%2==0){
+		            C.style.width = "300px";
+		            C.style.height = "300px";
+		            C.style.borderRadius = '600px';
+		            C.style.backgroundColor = 'red';
+						mybody.style.backgroundImage = "url('sea.jpg')";
+		            opensound.play();
+		         }else{
+		            C.style.width = "250px";
+		            C.style.height = "375px";
+		            C.style.borderRadius = '0px';
+		            C.style.backgroundColor = 'black';
+		            	mybody.style.backgroundImage = "url('')";
+		            closesound.play();
+		            
+
+		         }
+		      }
+
+				var Dlarge = 1
+				D.onclick = function () {
+				  Dlarge = Dlarge+1
+		         if(Dlarge%2==0){
+		            D.style.width = "550px";
+		            D.style.height = "800px";
+		            opensound.play();
+
+		         }else{
+		            D.style.width = "250px";
+		            D.style.height = "375px";
+		            closesound.play();
+		         }
+		      }
+
+				var Elarge = 1
+				E.onclick = function () {
+				  Elarge = Elarge+1
+		         if(Elarge%2==0){
+		            E.style.width = "550px";
+		            E.style.height = "800px";
+		            opensound.play();
+		         }else{
+		            E.style.width = "250px";
+		            E.style.height = "375px";
+		            closesound.play();
+		         }
+		      }
+
+				var Flarge = 1
+				F.onclick = function () {
+				  Flarge = Flarge+1
+		         if(Flarge%2==0){
+		            F.style.width = "100px";
+		            F.style.height = "2000px";
+		            opensound.play();
+		         }else{
+		            F.style.width = "250px";
+		            F.style.height = "375px";
+		            closesound.play();
+		         }
+		      }
+
+
+
+		   </script>
+</body>
+</html>
